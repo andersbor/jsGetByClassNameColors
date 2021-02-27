@@ -1,10 +1,14 @@
-let colorInput = document.getElementById("colorInput");
-let changeColorButton = document.getElementById("changeColorButton");
-let elements = document.getElementsByClassName("color");
+const colorInput = document.getElementById("colorInput");
+const changeColorButton = document.getElementById("changeColorButton");
 changeColorButton.addEventListener("click", changeColor);
 
-let span = document.getElementById("colorSpan")
+// list of elements with class="color"
+const elements = document.getElementsByClassName("color");
 
+// single element with id="colorSpan"
+const span = document.getElementById("colorSpan")
+
+// event handler function
 function changeColor() {
     let newColor = colorInput.value;
     for (let index = 0; index < elements.length; index++) {
